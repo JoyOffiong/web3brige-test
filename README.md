@@ -1,2 +1,2 @@
-# web3brige-test-
-Guesser's number game
+# web3brige-test
+A number-guesser game
