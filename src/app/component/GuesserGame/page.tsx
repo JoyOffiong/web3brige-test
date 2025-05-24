@@ -59,8 +59,11 @@ const submit =(e:any)=>{
   if(attempts <= 5 && randomNumber !== userGuess){
       setWrongModal(true)
   }
-  else if (attempts <=5 && userGuess > randomNumber ){
+  else if (attempts <=5 && randomNumber !== userGuess && userGuess > randomNumber ){
     setTooHighModal(true)
+  }
+   else if (attempts <=5 && randomNumber !== userGuess && userGuess < randomNumber ){
+    setTooLowModal(true)
   }
   else if (attempts <=5 && userGuess === randomNumber){
     setRightModal(true)

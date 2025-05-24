@@ -17,7 +17,15 @@ function Modal({text, open, close}:props) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={{ backgroundColor: 'white', padding: 4, width:"300px", marginTop: '20%', color:"black"  }} >
+        <Box sx={{   position: "absolute" as const,
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  color:"black",
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  p: 4, }} >
           <p className="text-secondary font-semibold mb-10">
             {text}
           </p>
