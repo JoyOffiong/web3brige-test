@@ -21,20 +21,25 @@ export default function GuesserGame() {
   function generateRandomNumber() {
     const secretNumber = Math.floor(Math.random() * 101);
     setRandomNumber(secretNumber);
-    console.log(secretNumber);
   }
 
   const closeRightModal = () => {
     setRightModal(false);
+
   };
   const closeTooHighModal = () => {
     setTooHighModal(false);
+     
+
   };
   const closeTooLowModal = () => {
     setTooLowModal(false);
+     
   };
   const closeGiveUpModal = () => {
     setGiveUpModal(false);
+     
+
   };
 
   useEffect(() => {
@@ -70,9 +75,11 @@ export default function GuesserGame() {
       }
 
       setAttempts((prev) => prev - 1);
+      
     } else {
       setGiveUpModal(true);
     }
+   
   };
 
   return (

@@ -22,6 +22,7 @@ function Modal({text, open, close}:props) {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 400,
+  borderRadius:"12px",
   color:"black",
   bgcolor: "background.paper",
   boxShadow: 24,
